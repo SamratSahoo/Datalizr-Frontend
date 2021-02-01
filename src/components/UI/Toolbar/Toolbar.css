@@ -1,0 +1,263 @@
+.ToolBarHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 500;
+  flex-flow: column;
+  box-shadow: 0px 0px 100px rgba(32, 5, 136, 1);
+}
+
+.ToolBar {
+  /* background-color: rgba(42, 15, 146, 1); */
+  /* background-color: transparent; */
+  /* height: 80px; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 23px 10px 23px 10px;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  /* max-width: 1500px; */
+  z-index: 502;
+  background-color: rgba(42, 15, 146, 1);
+}
+
+.ToolBarPages,
+.ToolBarSubPages {
+  width: 100%;
+  align-items: center;
+}
+
+.ToolBarPages {
+  display: flex;
+}
+
+.ToolBarSubPages {
+  display: none;
+}
+
+.ToolBarPagesLogin {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ToolBarPagesHolder {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  /* border: 3px solid black; */
+}
+
+.ToolBarPageBrand,
+.ToolBarPage {
+  margin: 0px 15px;
+  display: flex;
+}
+
+.ToolBarPageBrand p {
+  margin: 0px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.ToolBarPage p {
+  margin: 0px;
+  font-size: 13px;
+  font-family: "Inter500";
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ToolbarIcon {
+  margin-right: 10px;
+}
+
+.ToolBarButton {
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Toggle {
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 660px) {
+  .ToolBarHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 500;
+  }
+
+  .ToolBar {
+    /* background-color: rgba(42, 15, 146, 1); */
+    /* background-color: transparent; */
+    /* height: 80px; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 23px 10px 23px 10px;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    /* max-width: 1500px; */
+    box-shadow: 0px 0px 100px rgba(32, 5, 136, 1);
+  }
+
+  .ToolbarBrand {
+    height: 70px;
+    width: 70px;
+    background-image: url(../../../assets/images/StudyBuddyLogo5.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .ToolBarPagesLogin {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .ToolBarPagesHolder {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    /* border: 3px solid black; */
+  }
+
+  .ToolBarPageBrand,
+  .ToolBarPage {
+    margin: 0px 20px;
+  }
+
+  .ToolBarPageBrand p {
+    margin: 0px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .ToolBarPage p {
+    margin: 0px;
+    font-size: 16px;
+    font-family: "Inter500";
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ToolbarIcon {
+    margin: 0px 10px;
+  }
+
+  .ToolBarButton {
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .ToolBarHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 500;
+  }
+
+  .ToolBar {
+    /* background-color: rgba(42, 15, 146, 1); */
+    /* background-color: transparent; */
+    /* height: 80px; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 23px 30px 23px 30px;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    /* max-width: 1500px; */
+    box-shadow: 0px 0px 100px rgba(32, 5, 136, 1);
+  }
+
+  .ToolbarBrand {
+    height: 70px;
+    width: 70px;
+    background-image: url(../../../assets/images/StudyBuddyLogo5.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .ToolBarPages,
+  .ToolBarSubPages {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .ToolBarPagesLogin {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .ToolBarPagesHolder {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    /* border: 3px solid black; */
+  }
+
+  .ToolBarPageBrand,
+  .ToolBarPage {
+    margin: 0px 20px;
+  }
+
+  .ToolBarPageBrand p {
+    margin: 0px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .ToolBarPage p {
+    margin: 0px;
+    font-size: 16px;
+    font-family: "Inter500";
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ToolbarIcon {
+    margin: 0px 10px;
+  }
+
+  .ToolBarButton {
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .Toggle {
+    display: none;
+  }
+}
