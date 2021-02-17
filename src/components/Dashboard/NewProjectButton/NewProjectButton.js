@@ -24,8 +24,8 @@ class NewProjectButton extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.createProject} className="btn">
-          <span className="txt">Create Project</span>
+        <button className="button">
+          <a href="/create">Create New Project</a>
         </button>
       </div>
     );

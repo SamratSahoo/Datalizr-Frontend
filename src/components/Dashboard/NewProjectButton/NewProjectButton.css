@@ -1,14 +1,7 @@
-/* .btn {
-  background-color: #005eb6;
-  border-radius: 8px;
-  border: none;
-  padding: 15px 32px;
-  display: inline-block;
-  font-size: 16px;
+.flex-container {
+  display: flex;
 }
 
-.txt {
-  color: white;
-  text-align: center;
-  text-decoration: none;
-} */
+.button {
+  display: flex;
+}

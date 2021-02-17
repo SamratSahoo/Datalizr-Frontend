@@ -5,22 +5,17 @@
   width: 100%;
   z-index: 500;
   flex-flow: column;
-  box-shadow: 0px 0px 100px rgba(32, 5, 136, 1);
+  box-shadow: 0px 0px 100px rgba(211, 209, 209, 0.3);
 }
 
 .ToolBar {
-  /* background-color: rgba(42, 15, 146, 1); */
-  /* background-color: transparent; */
-  /* height: 80px; */
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   padding: 23px 10px 23px 10px;
   width: 100%;
   transition: all 0.2s ease-in-out;
-  /* max-width: 1500px; */
   z-index: 502;
-  background-color: rgba(42, 15, 146, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .ToolBarPages,
@@ -61,7 +56,7 @@
 .ToolBarPageBrand p {
   margin: 0px;
   font-size: 18px;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -70,7 +65,7 @@
   font-size: 13px;
   font-family: "Inter500";
   text-decoration: none;
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,7 +77,7 @@
 
 .ToolBarButton {
   padding: 10px;
-  background-color: white;
+  background-color: black;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -90,7 +85,6 @@
 .Toggle {
   transition: all 0.3s ease-in-out;
 }
-
 @media screen and (min-width: 660px) {
   .ToolBarHolder {
     display: flex;
@@ -111,13 +105,13 @@
     width: 100%;
     transition: all 0.2s ease-in-out;
     /* max-width: 1500px; */
-    box-shadow: 0px 0px 100px rgba(32, 5, 136, 1);
+    box-shadow: 0px 0px 100px rgba(211, 209, 209, 0.3);
   }
 
   .ToolbarBrand {
     height: 70px;
     width: 70px;
-    background-image: url(../../../assets/images/StudyBuddyLogo5.png);
+    background-image: url(../../../assets/images/white-gradient.png);
     background-size: cover;
     background-position: center;
   }
@@ -145,7 +139,7 @@
   .ToolBarPageBrand p {
     margin: 0px;
     font-size: 25px;
-    color: white;
+    color: black;
     text-decoration: none;
   }
 
@@ -154,7 +148,7 @@
     font-size: 16px;
     font-family: "Inter500";
     text-decoration: none;
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,7 +160,7 @@
 
   .ToolBarButton {
     padding: 10px;
-    background-color: white;
+    background-color: black;
     border-radius: 5px;
   }
 }
@@ -191,13 +185,13 @@
     width: 100%;
     transition: all 0.2s ease-in-out;
     /* max-width: 1500px; */
-    box-shadow: 0px 0px 100px rgba(32, 5, 136, 1);
+    box-shadow: 0px 0px 100px rgba(211, 209, 209, 0.3);
   }
 
   .ToolbarBrand {
     height: 70px;
     width: 70px;
-    background-image: url(../../../assets/images/StudyBuddyLogo5.png);
+    background-image: url(../../../assets/images/white-gradient.png);
     background-size: cover;
     background-position: center;
   }
@@ -232,7 +226,7 @@
   .ToolBarPageBrand p {
     margin: 0px;
     font-size: 25px;
-    color: white;
+    color: black;
     text-decoration: none;
   }
 
@@ -241,7 +235,7 @@
     font-size: 16px;
     font-family: "Inter500";
     text-decoration: none;
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,7 +247,7 @@
 
   .ToolBarButton {
     padding: 10px;
-    background-color: white;
+    background-color: black;
     border-radius: 5px;
   }
 

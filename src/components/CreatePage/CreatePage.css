@@ -1,0 +1,31 @@
+hr {
+  width: 100%;
+}
+
+.flex-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-start;
+  margin: 0 25%;
+}
+.text-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align-last: left;
+}
+
+.create-text {
+  flex: 0 1 auto;
+  font-family: "Crimson Text";
+  margin-top: -3%;
+  text-align: left;
+}
+
+.main-text {
+  margin-top: -1.5%;
+}
