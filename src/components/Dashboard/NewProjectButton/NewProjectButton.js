@@ -5,7 +5,6 @@ import "./NewProjectButton.css";
 class NewProjectButton extends Component {
   createProject() {
     const api_url = process.env.REACT_APP_API_AZURE + "createProject";
-    console.log(api_url);
     const dataToSend = {
       fileType: ".csv",
       columns: ["Hello", "World"],
@@ -25,7 +24,7 @@ class NewProjectButton extends Component {
     return (
       <div>
         <button className="button">
-          <a href="/create">Create New Project</a>
+          <a onClick={this.createProject}>Create New Project</a>
         </button>
       </div>
     );
