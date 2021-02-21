@@ -1,0 +1,24 @@
+.Register {
+  /* padding: 100px 20px; */
+  display: grid;
+  grid-template-columns: 1fr;
+  /* gap: 150px; */
+  place-items: center;
+  width: 100%;
+  /* height: 2000px; */
+}
+
+.nodeone-enter {
+  opacity: 0;
+}
+.nodeone-enter-active {
+  opacity: 1;
+  transition: all 200ms;
+}
+.nodeone-exit {
+  opacity: 1;
+}
+.nodeone-exit-active {
+  opacity: 0;
+  transition: all 200ms;
+}

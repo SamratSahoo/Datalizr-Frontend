@@ -1,0 +1,233 @@
+.RegisterBox {
+  --register-input-fs: 13px;
+  --register-icon-fs: 16px;
+  --register-heading-fs: 25px;
+  --register-subheading-fs: 18px;
+  --register-button-fs: 15px;
+  --register-form-warnings-fs: 11px;
+}
+
+.RegisterBox {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  /* box-shadow: 0px 0px 30px #eeeeee; */
+  max-width: 600px;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 60px rgba(42, 15, 146, 0.8);
+}
+
+.RegisterToSCheck {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  place-items: center;
+}
+
+.RegisterChecksOnForm {
+  font-size: var(--register-form-warnings-fs);
+  text-align: left;
+  font-family: "Inter400";
+  color: red;
+}
+
+.RegisterChecksOnForm p {
+  margin: 0px;
+}
+
+.NativeRegistration {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  place-items: center;
+  width: 100%;
+}
+
+.NativeRegistration input {
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #717d86;
+  padding: 0px 20px;
+}
+
+.NativeRegistration .NativeRegInputRow {
+  width: 100%;
+  /* height: 50px; */
+  border: 2px solid #dddddd;
+  padding: 15px 20px;
+  font-family: "Inter400";
+  color: #717d86;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--register-input-fs);
+}
+
+.RegisterIcon {
+  font-size: var(--register-icon-fs);
+  /* border: 3px solid black; */
+}
+
+.NativeRegSubmit,
+.NativeRegSubmitDisabled,
+.FacebookRegSubmit,
+.FreeRegSubmit {
+  padding: 15px;
+  width: 100%;
+  font-family: "Inter600";
+  font-size: var(--register-button-fs);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.GoogleRegSubmit {
+  padding: 5px;
+  width: 100%;
+  font-family: "Inter600";
+  font-size: var(--register-button-fs);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.NativeRegSubmit p,
+.GoogleRegSubmit p,
+.NativeRegSubmitDisabled p,
+.FacebookRegSubmit p,
+.FreeRegSubmit p {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NativeRegSubmit {
+  background-color: #6c63ff;
+  box-shadow: 0px 10px 20px #6c63ff66;
+  margin-top: 20px;
+  color: white;
+}
+
+.FreeRegSubmit {
+  background-color: #3bcde3;
+  box-shadow: 0px 10px 20px #3bcde366;
+  margin-top: 20px;
+  color: white;
+}
+
+.GoogleRegSubmit {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 30px #dddddd;
+  margin-bottom: 20px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FreeRegSubmit:hover {
+  box-shadow: 0px 10px 30px #3bcde366;
+  transform: scale(1.02);
+}
+
+.GoogleRegSubmit:hover {
+  box-shadow: 0px 10px 50px #dddddd;
+  transform: scale(1.02);
+}
+
+.FacebookRegSubmit {
+  background-color: #4267b2;
+  box-shadow: 0px 10px 20px #4267b266;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.FacebookRegSubmit:hover {
+  box-shadow: 0px 10px 30px #4267b266;
+  transform: scale(1.02);
+}
+
+.NativeRegSubmitDisabled {
+  background-color: #999999;
+  margin-top: 20px;
+}
+
+.NativeRegSubmit:hover {
+  box-shadow: 0px 10px 30px #6c63ff66;
+  transform: scale(1.02);
+}
+
+.GoogleRegIcon {
+  margin: 0px 10px;
+}
+
+.RegisterBoxTitle {
+  font-family: "Inter600";
+  margin-bottom: 40px;
+}
+
+.RegisterBoxTitle p {
+  margin: 0px;
+}
+
+.RegisterHeading {
+  font-size: var(--register-heading-fs);
+  font-family: "Inter800";
+  color: #000;
+  text-align: center;
+}
+
+.GoogleIcon {
+  background-image: url(../../../assets/images/btn_google_light_normal_ios.svg);
+  background-size: contain;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  margin-right: 20px;
+}
+
+/* .FBIcon {
+  background-image: url(../../../assets/images/Icons/fb-icon.png);
+  background-size: contain;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  margin-right: 20px;
+} */
+
+.RegisterSubHeading {
+  color: #717d86;
+  font-size: var(--register-subheading-fs);
+}
+
+@media screen and (min-width: 720px) {
+  .RegisterBox {
+    --register-input-fs: 18px;
+    --register-icon-fs: 20px;
+    --register-heading-fs: 25px;
+    --register-subheading-fs: 18px;
+    --register-button-fs: 15px;
+    --register-form-warnings-fs: 13px;
+  }
+}
+
+.NativeRegistration p {
+  margin: 0px;
+}
+
+@media screen and (min-width: 960px) {
+  .RegisterBox {
+    --register-heading-fs: 30px;
+    --register-subheading-fs: 23px;
+    --register-button-fs: 18px;
+    --register-form-warnings-fs: 14px;
+  }
+}

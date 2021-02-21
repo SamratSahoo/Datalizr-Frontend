@@ -1,3 +1,14 @@
+/* .ToolBar {
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+}
+
+.TabElement {
+    font-size: 20px;
+    font-family: 'ProductSans';
+} */
+
 .ToolBarHolder {
   display: flex;
   justify-content: center;
@@ -5,7 +16,7 @@
   width: 100%;
   z-index: 500;
   flex-flow: column;
-  box-shadow: 0px 0px 100px rgba(211, 209, 209, 0.3);
+  /* box-shadow: 0px 0px 100px; */
 }
 
 .ToolBar {
@@ -15,7 +26,7 @@
   width: 100%;
   transition: all 0.2s ease-in-out;
   z-index: 502;
-  background-color: rgba(255, 255, 255, 1);
+  background-image: linear-gradient(353deg, #7303ec, #0046bd);
 }
 
 .ToolBarPages,
@@ -56,7 +67,7 @@
 .ToolBarPageBrand p {
   margin: 0px;
   font-size: 18px;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -65,7 +76,7 @@
   font-size: 13px;
   font-family: "Inter500";
   text-decoration: none;
-  color: black;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,7 +88,7 @@
 
 .ToolBarButton {
   padding: 10px;
-  background-color: black;
+  background-color: white;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -85,6 +96,7 @@
 .Toggle {
   transition: all 0.3s ease-in-out;
 }
+
 @media screen and (min-width: 660px) {
   .ToolBarHolder {
     display: flex;
@@ -95,23 +107,20 @@
   }
 
   .ToolBar {
-    /* background-color: rgba(42, 15, 146, 1); */
-    /* background-color: transparent; */
-    /* height: 80px; */
     display: flex;
     /* justify-content: center; */
     align-items: center;
     padding: 23px 10px 23px 10px;
     width: 100%;
     transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 100px;
     /* max-width: 1500px; */
-    box-shadow: 0px 0px 100px rgba(211, 209, 209, 0.3);
   }
 
   .ToolbarBrand {
     height: 70px;
     width: 70px;
-    background-image: url(../../../assets/images/white-gradient.png);
+    background-image: url(../../../assets/images/navy-blue-gradient.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -139,7 +148,7 @@
   .ToolBarPageBrand p {
     margin: 0px;
     font-size: 25px;
-    color: black;
+    color: white;
     text-decoration: none;
   }
 
@@ -148,7 +157,7 @@
     font-size: 16px;
     font-family: "Inter500";
     text-decoration: none;
-    color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,8 +169,20 @@
 
   .ToolBarButton {
     padding: 10px;
-    background-color: black;
+    background-color: white;
     border-radius: 5px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .ToolBar {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 23px 10px 23px 10px;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 0px !important;
+    /* max-width: 1500px; */
   }
 }
 
@@ -185,13 +206,12 @@
     width: 100%;
     transition: all 0.2s ease-in-out;
     /* max-width: 1500px; */
-    box-shadow: 0px 0px 100px rgba(211, 209, 209, 0.3);
   }
 
   .ToolbarBrand {
     height: 70px;
     width: 70px;
-    background-image: url(../../../assets/images/white-gradient.png);
+    background-image: url(../../../assets/images/navy-blue-gradient.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -226,7 +246,7 @@
   .ToolBarPageBrand p {
     margin: 0px;
     font-size: 25px;
-    color: black;
+    color: white;
     text-decoration: none;
   }
 
@@ -235,7 +255,7 @@
     font-size: 16px;
     font-family: "Inter500";
     text-decoration: none;
-    color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,7 +267,7 @@
 
   .ToolBarButton {
     padding: 10px;
-    background-color: black;
+    background-color: white;
     border-radius: 5px;
   }
 

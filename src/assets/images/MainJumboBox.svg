@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="775" viewBox="0 0 1920 775">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2a0f92"/>
+      <stop offset="1" stop-color="#7d12cc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6116ce"/>
+      <stop offset="1" stop-color="#6116e1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6816cd"/>
+      <stop offset="1" stop-color="#971cd3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6116d0"/>
+      <stop offset="1" stop-color="#6116dc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7911c9"/>
+      <stop offset="1" stop-color="#300f96"/>
+    </linearGradient>
+    <clipPath id="clip-MainJumboBox_">
+      <rect width="1920" height="775"/>
+    </clipPath>
+  </defs>
+  <g id="MainJumboBox_" data-name="MainJumboBox​                               " clip-path="url(#clip-MainJumboBox_)">
+    <rect width="1920" height="775" fill="#fff"/>
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="1920" height="775" fill="url(#linear-gradient)"/>
+    <path id="Intersection_6" data-name="Intersection 6" d="M-4456.178,836.024A882.161,882.161,0,0,1-4490.5,591.578c0-199.2,66.06-382.969,177.448-530.554H-3621.5v775Z" transform="translate(5541 -61.024)" fill="url(#linear-gradient-2)"/>
+    <path id="Intersection_5" data-name="Intersection 5" d="M-4742.794,811.5c199.7-195.577,460.7-314,746.3-314,285.582,0,546.58,118.43,746.278,314Z" transform="translate(5065 -37)" fill="url(#linear-gradient-3)"/>
+    <path id="Intersection_4" data-name="Intersection 4" d="M-5571.807,836.024v-775h217.976c54.569,93.962,86.024,204.458,86.024,322.7,0,178.511-71.67,339.352-186.353,452.3Z" transform="translate(5572.307 -61.024)" fill="url(#linear-gradient-4)"/>
+    <circle id="Ellipse_4" data-name="Ellipse 4" cx="71" cy="71" r="71" transform="translate(175 448)" fill="url(#linear-gradient-5)"/>
+  </g>
+</svg>

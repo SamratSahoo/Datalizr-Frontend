@@ -1,0 +1,145 @@
+.BoxJumbotron {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  place-items: center;
+}
+
+.BoxJumbotron p {
+  margin: 0px;
+}
+
+.BoxJumbotronHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(71, 59, 204); */
+  background-image: url(../../../assets/images/MainJumboBox.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* max-height: 775px; */
+  /* height: 800px; */
+  /* min-height: 600px; */
+  padding: 20px 0px;
+  /* padding: 150px 0px; */
+}
+
+.BoxJumbotronText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+  text-align: left;
+  max-width: 600px;
+  /* border: 3px solid black; */
+  color: white;
+  padding: 15px;
+}
+
+.BoxJumbotronSubFunction,
+.BoxJumbotronFirstFunction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  /* border: 3px solid black; */
+}
+
+.BoxJumbotronButtonLink {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.BoxJumbotronHeader,
+.BoxJumbotronSubHeader {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.BoxJumbotronHeader {
+  font-size: 40px;
+  font-family: "Inter800";
+}
+
+.BoxJumbotronSubHeader {
+  font-size: 23px;
+  font-family: "Inter500";
+}
+
+.BoxJumbotronButton {
+  padding: 15px 20px;
+  font-size: 20px;
+  background-color: white;
+  color: rgba(42, 15, 146, 1);
+  margin-top: 70px;
+  border-radius: 5px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.BoxJumbotronButton:hover {
+  background-color: rgb(180, 36, 128);
+  color: white;
+  box-shadow: 0px 0px 60px rgba(42, 15, 146, 0.8);
+}
+
+@media screen and (min-width: 772px) {
+  .BoxJumbotronSubFunction {
+    padding-right: 45px;
+  }
+
+  .BoxJumbotronFirstFunction {
+    padding-left: 45px;
+  }
+
+  .BoxJumbotron {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .BoxJumbotronHolder {
+    height: 60vw;
+    max-height: 775px;
+  }
+
+  .BoxJumbotronText {
+    padding-left: 45px;
+  }
+
+  .BoxJumbotronHeader {
+    font-size: 30px;
+    font-family: "Inter800";
+  }
+  .BoxJumbotronSubHeader {
+    font-size: 18px;
+    font-family: "Inter500";
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .BoxJumbotronHeader {
+    font-size: 35px;
+    font-family: "Inter800";
+  }
+  .BoxJumbotronSubHeader {
+    font-size: 20px;
+    font-family: "Inter500";
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .BoxJumbotronHeader {
+    font-size: 40px;
+    font-family: "Inter800";
+  }
+  .BoxJumbotronSubHeader {
+    font-size: 23px;
+    font-family: "Inter500";
+  }
+}

@@ -1,15 +1,9 @@
 import "./Toolbar.css";
 import "./ToolbarMobile.css";
 import React, { Component } from "react";
-import {
-  FaPen,
-  FaTag,
-  FaPaperclip,
-  FaQuestionCircle,
-  FaBars,
-  FaUser,
-} from "react-icons/fa";
+import { FaPen, FaTag, FaPaperclip, FaBars, FaUser } from "react-icons/fa";
 import { connect } from "react-redux";
+import { motion } from "framer-motion";
 
 class Toolbar extends Component {
   state = {
@@ -25,10 +19,10 @@ class Toolbar extends Component {
 
   render() {
     return (
-      <div
+      <motion.div
         className="ToolBarHolder"
         style={{
-          backgroundColor: "rgba(255, 255, 255, 1)",
+          backgroundImage: "linear-gradient(353deg, #7303ec, #0046bd)",
         }}
       >
         <div className="ToolBar">
@@ -60,7 +54,7 @@ class Toolbar extends Component {
                 <div className="ToolBarPage">
                   <a href="/dashboard">
                     <p>
-                      <FaPen className="ToolbarIcon" />
+                      <FaPaperclip className="ToolbarIcon" />
                       Dashboard
                     </p>
                   </a>
@@ -68,7 +62,7 @@ class Toolbar extends Component {
                 <div className="ToolBarPage">
                   <a href="/create">
                     <p>
-                      <FaPaperclip className="ToolbarIcon" /> Create
+                      <FaPen className="ToolbarIcon" /> Create
                     </p>
                   </a>
                 </div>
@@ -91,9 +85,7 @@ class Toolbar extends Component {
                 <div className="ToolBarPage">
                   <a href="/register" style={{ textDecoration: "none" }}>
                     <div className="ToolBarButton">
-                      <p style={{ color: "rgba(255, 255, 255, 1)" }}>
-                        Register
-                      </p>
+                      <p style={{ color: "rgba(0, 0, 0, 1)" }}>Register</p>
                     </div>
                   </a>
                 </div>
@@ -132,33 +124,32 @@ class Toolbar extends Component {
               ? null
               : "translateX(-500px)",
             height: this.state.showMobileToolBar ? null : "0px",
-            // fontSize: this.state.showMobileToolBar ? null : "0px",
           }}
         >
           <div className="ToolbarMobilePage">
-            <a href="/create">
+            <a href="/dashboard">
               <p>
-                <FaPen className="ToolbarIcon" />
+                <FaPaperclip className="ToolbarIcon" />
                 Dashboard
               </p>
             </a>
           </div>
           <div className="ToolbarMobilePage">
-            <a href="/blog">
+            <a href="/create">
               <p>
-                <FaPaperclip className="ToolbarIcon" /> Create
+                <FaPen className="ToolbarIcon" /> Create
               </p>
             </a>
           </div>
           <div className="ToolbarMobilePage">
-            <a href="/pricing">
+            <a href="/contribute">
               <p>
                 <FaTag className="ToolbarIcon" /> Contribute
               </p>
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     );
   }
 }
@@ -176,4 +167,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default Toolbar;
+export default connect(mapStateToProps, mapDispatchToProps)(Toolbar);
