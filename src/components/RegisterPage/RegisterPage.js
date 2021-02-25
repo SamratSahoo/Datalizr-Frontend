@@ -53,7 +53,7 @@ const RegisterPage = (props) => {
       .post(
         process.env.REACT_APP_API_AZURE + "authentication/googleLogin",
         {
-          token: user["_token"]["idToken"],
+          token: user["tokenObj"]["id_token"],
         },
         {
           headers: {
@@ -68,8 +68,8 @@ const RegisterPage = (props) => {
           window.location.reload();
           return <Redirect to="/" />;
         } else {
-          setgoogleemail(user["_profile"]["email"]);
-          setgoogleid(user["_token"]["idToken"]);
+          setgoogleemail(user["profileObj"]["email"]);
+          setgoogleid(user["tokenObj"]["id_token"]);
           setregistrationStep(1);
           setregistrationStepChanged(true);
         }
