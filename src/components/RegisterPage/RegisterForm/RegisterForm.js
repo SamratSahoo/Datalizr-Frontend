@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./RegisterForm.css";
 import SocialButton from "../SocialButton/SocialButton";
+import GoogleLogin from "react-google-login";
 
 class RegisterForm extends Component {
   render() {
@@ -15,16 +16,17 @@ class RegisterForm extends Component {
           </div>
         </div>
         <div className="NativeRegistration">
-          <SocialButton
-            provider="google"
-            appId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
-            onLoginSuccess={this.props.handleSocialLogin}
-            onLoginFailure={this.props.handleSocialLoginFailure}
+          <GoogleLogin
+            clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
+            onSuccess={this.props.handleSocialLogin}
+            onFailure={this.props.handleSocialLoginFailure}
+            cookiePolicy={"single_host_origin"}
+            buttonText="Sign In with Google"
             className="GoogleRegSubmit"
           >
-            <div className="GoogleIcon"></div>
-            <p>Sign In with Google</p>
-          </SocialButton>
+            {/* <div className="GoogleIcon"></div> */}
+            {/* <p>Sign In with Google</p> */}
+          </GoogleLogin>
         </div>
       </div>
     );
