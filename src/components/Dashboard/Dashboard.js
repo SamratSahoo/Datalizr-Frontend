@@ -1,11 +1,22 @@
 import NewProjectButton from "./NewProjectButton/NewProjectButton";
 import React, { Component } from "react";
+import ProjectList from "./ProjectList/ProjectList";
+import ProfileInformation from "./ProfileInformation/ProfileInformation";
+import { Redirect } from "react-router-dom";
 
 class Dashboard extends Component {
+  props = {
+    isAuth: localStorage.getItem("authenticated"),
+  };
+
   render() {
+    if (!localStorage.getItem("authenticated")) {
+      return <Redirect path="/register" />;
+    }
     return (
       <div>
-        <NewProjectButton></NewProjectButton>
+        {/* <ProfileInformation></ProfileInformation> */}
+        <ProjectList></ProjectList>
       </div>
     );
   }

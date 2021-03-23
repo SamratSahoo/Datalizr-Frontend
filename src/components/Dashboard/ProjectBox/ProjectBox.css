@@ -1,0 +1,59 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1% !important;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  width: 45% !important;
+  text-align: left;
+  font-family: "Crimson Text";
+  overflow-wrap: anywhere !important;
+  border-radius: 25px;
+}
+
+.inner-flex-project {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+}
+@media (max-width: 960px) {
+  .container {
+    width: 65% !important;
+  }
+}
+
+.id-text {
+  font-size: 1em;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  font-family: "Inter300";
+}
+
+.name-text {
+  font-size: 2.1em;
+  position: relative;
+  margin-bottom: 1%;
+  margin-right: 2%;
+  font-family: "Inter600";
+}
+
+.description-text {
+  font-size: 1em;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  font-family: "Inter300";
+}
+
+.subheader-text {
+  font-weight: bold;
+  color: black;
+}
+
+.divider {
+  border-color: #7303ec !important;
+}
+
+.add-data-btn {
+  align-self: flex-end;
+}

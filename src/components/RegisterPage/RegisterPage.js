@@ -28,7 +28,7 @@ const RegisterPage = (props) => {
   const saveUserName = () => {
     axios
       .post(
-        process.env.REACT_APP_API_AZURE + "authentication/googleSignUp",
+        process.env.REACT_APP_API_LOCAL + "authentication/googleSignUp",
         {
           email: googleemail,
           username: username,
@@ -51,7 +51,7 @@ const RegisterPage = (props) => {
   const accountExistsCheck = async (user) => {
     axios
       .post(
-        process.env.REACT_APP_API_AZURE + "authentication/googleLogin",
+        process.env.REACT_APP_API_LOCAL + "authentication/googleLogin",
         {
           token: user["tokenObj"]["id_token"],
         },
@@ -79,7 +79,7 @@ const RegisterPage = (props) => {
   const usernameExists = () => {
     axios
       .post(
-        process.env.REACT_APP_API_AZURE + "authentication/usernameAvailable",
+        process.env.REACT_APP_API_LOCAL + "authentication/usernameAvailable",
         {
           username: username,
         },

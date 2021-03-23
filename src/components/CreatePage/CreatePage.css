@@ -1,31 +1,57 @@
 hr {
   width: 100%;
+  border-color: gray !important;
 }
 
-.flex-container {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: flex-start;
-  margin: 0 25%;
-}
-.text-list {
+.create-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  flex-wrap: wrap;
-  text-align-last: left;
-}
-
-.create-text {
-  flex: 0 1 auto;
-  font-family: "Crimson Text";
-  margin-top: -3%;
+  margin-top: 1% !important;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  width: 45% !important;
   text-align: left;
+  font-family: "Inter400";
+  overflow-wrap: anywhere !important;
+  /* border: 2px solid #7303ec; */
 }
 
-.main-text {
-  margin-top: -1.5%;
+@media (max-width: 960px) {
+  .create-container {
+    width: 65% !important;
+  }
+}
+
+.create-title-text {
+  font-size: 2.1em;
+  font-family: "Inter800";
+}
+
+.create-subtitle-text {
+  font-size: 1.2em;
+}
+
+.create-step-text {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "Inter700";
+}
+
+.create-fileType {
+  flex: 1 !important;
+}
+
+.create-dataset {
+  display: flex;
+  margin-top: 2% !important;
+  margin-bottom: 7% !important;
+  align-self: center;
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  margin-top: 1% !important;
+  margin-bottom: 3% !important;
 }

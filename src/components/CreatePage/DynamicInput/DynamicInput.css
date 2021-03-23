@@ -1,0 +1,41 @@
+.dynamic-input-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.outer-dynamic-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.add-column-btn {
+  margin-left: 5%;
+  margin-top: 2.5%;
+  white-space: nowrap;
+  height: 100%;
+  border: none;
+}
+
+.input-fields {
+  width: 250% !important;
+  margin-top: 1% !important;
+  margin-bottom: 3% !important;
+}
+
+.field-button {
+  height: 1%;
+  margin-left: 3% !important;
+  margin-top: 2% !important;
+  width: 120%;
+}
+
+.field-display {
+  margin-left: 2%;
+}
+
+.field-list-container {
+  display: flex;
+  flex-direction: row;
+}
