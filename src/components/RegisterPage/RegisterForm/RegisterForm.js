@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./RegisterForm.css";
-import SocialButton from "../SocialButton/SocialButton";
 import GoogleLogin from "react-google-login";
 
 class RegisterForm extends Component {

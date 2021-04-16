@@ -7,14 +7,23 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import axios from "axios";
+import FormElement from "../../CreatePage/FormElement/FormElement";
+import "./AddDataButton.css";
 
 export default function AddDataButton(props) {
   const [open, setOpen] = React.useState(false);
   const [fields, setField] = React.useState([]);
+  const refArray = [];
 
   const handleClickOpen = () => {
     setOpen(true);
     getFields();
+  };
+
+  const handleRef = () => {
+    var reference = React.createRef();
+    refArray.push(reference);
+    return reference;
   };
 
   const handleClose = () => {
@@ -30,14 +39,18 @@ export default function AddDataButton(props) {
         "Access-Control-Allow-Origin": "*",
       },
     };
+    var columnsToAppend = [];
+    refArray.map((reference) =>
+      columnsToAppend.push(reference.current.state.keyElement)
+    );
     const dataToSend = {
       fileId: props.datasetId,
       fileType: props.fileType,
-      columnsToAppend: props.columnsToAppend,
-      userId: props.userId,
+      columnsToAppend: columnsToAppend,
+      userId: localStorage.getItem("id"),
     };
     axios.post(api_url, dataToSend, headersUse).then((res) => {
-      setField(res.data.fields);
+      console.log(res);
     });
   };
 
@@ -71,9 +84,18 @@ export default function AddDataButton(props) {
           <DialogContentText>
             This dataset is looking for the following fields:
           </DialogContentText>
-          {fields.map((field, index) => (
-            <TextField autoFocus margin="dense" label={field} fullWidth />
-          ))}
+          <div className="form-element-contain">
+            {fields.map((field, index) => (
+              <FormElement
+                autoFocus
+                margin="dense"
+                placeholder={field}
+                fullWidth
+                ref={handleRef()}
+                key={index}
+              />
+            ))}
+          </div>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary">

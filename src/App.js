@@ -7,6 +7,7 @@ import Toolbar from "./components/UI/Toolbar/Toolbar";
 import CreatePage from "./components/CreatePage/CreatePage";
 import RegisterPage from "./components/RegisterPage/RegisterPage";
 import Accounts from "./components/Accounts/Accounts";
+import ReviewPage from "./components/ReviewPage/ReviewPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/create" component={CreatePage} exact />
           <Route path="/account" component={Accounts} exact />
           <Route path="/register" component={RegisterPage} exact />
+          <Route path="/review" component={ReviewPage} exact />
         </div>
       </div>
     </BrowserRouter>

@@ -1,0 +1,50 @@
+.review-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3%;
+  font-size: 1.5em;
+  margin-left: 22.5%;
+  margin-right: 22.5%;
+}
+
+.fields-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.field-review {
+  margin-left: 1% !important;
+  font-family: "Inter400";
+  font-size: 0.7em !important;
+}
+
+.data-container {
+}
+
+.review-partition {
+  background: #dddddd;
+  border-radius: 5px 20px 5px 20px;
+  margin-top: 5%;
+  padding: 2%;
+}
+
+.review-partition-1 {
+  background: #dddddd;
+  margin-top: 0% !important;
+  border-radius: 5px 20px 5px 20px;
+  margin-top: 10%;
+  padding: 2%;
+}
+
+.div-button {
+  margin-right: 2% !important;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  justify-content: center;
+}

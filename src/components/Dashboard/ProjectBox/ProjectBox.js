@@ -1,7 +1,5 @@
 import "./ProjectBox.css";
-import axios from "axios";
 import React, { Component } from "react";
-import { Button } from "@material-ui/core";
 import AddDataButton from "../AddDataButton/AddDataButton";
 
 class ProjectBox extends Component {

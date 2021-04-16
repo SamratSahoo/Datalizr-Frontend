@@ -1,7 +1,14 @@
 import "./Toolbar.css";
 import "./ToolbarMobile.css";
 import React, { Component } from "react";
-import { FaPen, FaTag, FaPaperclip, FaBars, FaUser } from "react-icons/fa";
+import {
+  FaPen,
+  FaBars,
+  FaUser,
+  FaStickyNote,
+  FaHandsHelping,
+  FaHome,
+} from "react-icons/fa";
 import { connect } from "react-redux";
 import { motion } from "framer-motion";
 
@@ -54,7 +61,7 @@ class Toolbar extends Component {
                 <div className="ToolBarPage">
                   <a href="/dashboard">
                     <p>
-                      <FaPaperclip className="ToolbarIcon" />
+                      <FaHome className="ToolbarIcon" />
                       Dashboard
                     </p>
                   </a>
@@ -69,7 +76,14 @@ class Toolbar extends Component {
                 <div className="ToolBarPage">
                   <a href="/contribute">
                     <p>
-                      <FaTag className="ToolbarIcon" /> Contribute
+                      <FaHandsHelping className="ToolbarIcon" /> Contribute
+                    </p>
+                  </a>
+                </div>
+                <div className="ToolBarPage">
+                  <a href="/review">
+                    <p>
+                      <FaStickyNote className="ToolbarIcon" /> Review
                     </p>
                   </a>
                 </div>
@@ -129,7 +143,7 @@ class Toolbar extends Component {
           <div className="ToolbarMobilePage">
             <a href="/dashboard">
               <p>
-                <FaPaperclip className="ToolbarIcon" />
+                <FaHome className="ToolbarIcon" />
                 Dashboard
               </p>
             </a>
@@ -144,7 +158,14 @@ class Toolbar extends Component {
           <div className="ToolbarMobilePage">
             <a href="/contribute">
               <p>
-                <FaTag className="ToolbarIcon" /> Contribute
+                <FaHandsHelping className="ToolbarIcon" /> Contribute
+              </p>
+            </a>
+          </div>
+          <div className="ToolbarMobilePage">
+            <a href="/review">
+              <p>
+                <FaStickyNote className="ToolbarIcon" /> Review
               </p>
             </a>
           </div>
