@@ -4,7 +4,7 @@ import "./NewProjectButton.css";
 
 class NewProjectButton extends Component {
   createProject() {
-    const api_url = process.env.REACT_APP_API_LOCAL + "createProject";
+    const api_url = process.env.REACT_APP_API_AZURE + "createProject";
     const dataToSend = {
       fileType: ".csv",
       columns: ["Hello", "World"],

@@ -12,7 +12,7 @@ const AccountSF = (props) => {
   const usernameExists = () => {
     axios
       .post(
-        process.env.REACT_APP_API_LOCAL + "authentication/usernameAvailable",
+        process.env.REACT_APP_API_AZURE + "authentication/usernameAvailable",
         {
           username: username,
         },
@@ -35,7 +35,7 @@ const AccountSF = (props) => {
   const changeUsername = () => {
     axios
       .post(
-        process.env.REACT_APP_API_LOCAL + "authentication/changeUsername",
+        process.env.REACT_APP_API_AZURE + "authentication/changeUsername",
         {
           newUsername: username,
           id: props.id,

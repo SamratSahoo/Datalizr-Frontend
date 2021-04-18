@@ -33,7 +33,7 @@ class CreatePage extends Component {
     this.setState({ description: data["keyElement"] });
 
   createDataset() {
-    const api_url = process.env.REACT_APP_API_LOCAL + "createProject";
+    const api_url = process.env.REACT_APP_API_AZURE + "createProject";
     this.setState(
       {
         columns: this.dynamicInput.current.state.columns,

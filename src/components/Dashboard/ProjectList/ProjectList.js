@@ -10,7 +10,7 @@ class ProjectList extends Component {
   }
 
   componentDidMount() {
-    const api_url = process.env.REACT_APP_API_LOCAL + "getProjects";
+    const api_url = process.env.REACT_APP_API_AZURE + "getProjects";
     const headersUse = {
       headers: {
         "Content-Type": "application/json",

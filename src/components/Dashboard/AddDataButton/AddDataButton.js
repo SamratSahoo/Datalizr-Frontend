@@ -32,7 +32,7 @@ export default function AddDataButton(props) {
 
   const handleSubmit = () => {
     setOpen(false);
-    const api_url = process.env.REACT_APP_API_LOCAL + "addData";
+    const api_url = process.env.REACT_APP_API_AZURE + "addData";
     const headersUse = {
       headers: {
         "Content-Type": "application/json",
@@ -55,7 +55,7 @@ export default function AddDataButton(props) {
   };
 
   const getFields = () => {
-    const api_url = process.env.REACT_APP_API_LOCAL + "getDatasets";
+    const api_url = process.env.REACT_APP_API_AZURE + "getDatasets";
     const headersUse = {
       headers: {
         "Content-Type": "application/json",
