@@ -8,19 +8,16 @@ class ReviewBox extends Component {
   constructor() {
     super();
     this.state = {
-      id: "",
-      datasetId: "",
-      data: [],
-      userId: "",
-      fileType: ".csv",
-      loaded: false,
-      approvals: 0,
+      dataList: [],
       success: false,
-      fields: [],
+      fieldList: [[]],
       redirect: false,
+      currentData: [],
+      currentFields: [],
     };
     this.approveData = this.approveData.bind(this);
     this.denyData = this.denyData.bind(this);
+    this.currentDataProcessor = this.currentDataProcessor.bind(this);
   }
 
   componentDidMount() {
@@ -36,15 +33,11 @@ class ReviewBox extends Component {
 
     axios.post(api_url, dataToSend, headersUse).then((res) => {
       this.setState({
-        id: res.data.id,
-        datasetId: res.data.datasetId,
-        data: res.data.data,
-        userId: res.data.userId,
-        fileType: res.data.fileType,
-        loaded: res.data.loaded,
-        approvals: res.data.approvals,
+        dataList: res.data.dataList,
+        fieldList: res.data.fieldList,
         success: res.data.success,
-        fields: res.data.fields,
+        currentData: res.data.dataList[0]["data"],
+        currentFields: res.data.fieldList[0],
       });
     });
   }
@@ -57,17 +50,44 @@ class ReviewBox extends Component {
         "Access-Control-Allow-Origin": "*",
       },
     };
-
     const dataToSend = {
       userId: localStorage.getItem("id"),
-      datasetId: this.state.datasetId,
-      dataId: this.state.id,
+      datasetId: this.state.dataList[0]["datasetId"],
+      dataId: this.state.dataList[0]["id"],
       approvalStatus: true,
     };
+    this.currentDataProcessor();
     axios.post(api_url, dataToSend, headersUse).then((res) => {
-      this.renderRedirect();
-      this.render();
+      console.log(this.state);
     });
+  }
+
+  currentDataProcessor() {
+    console.log(this.tempDList);
+    var tempDList = this.state.dataList;
+    var valD = tempDList.shift();
+    console.log(this.state.tempDList);
+    var tempFList = this.state.fieldList;
+    var valF = tempFList.shift();
+
+    if (this.state.dataList.length > 0) {
+      this.setState({
+        dataList: tempDList,
+        fieldList: tempFList,
+      });
+
+      this.setState({
+        currentData: this.state.dataList[0]["data"],
+        currentFields: this.state.fieldList[0],
+      });
+      console.log(this.state.currentData);
+    } else {
+      this.setState({
+        success: false,
+        currentData: "",
+        currentFields: "",
+      });
+    }
   }
 
   denyData() {
@@ -81,13 +101,13 @@ class ReviewBox extends Component {
 
     const dataToSend = {
       userId: localStorage.getItem("id"),
-      datasetId: this.state.datasetId,
-      dataId: this.state.id,
+      datasetId: this.state.dataList[0]["datasetId"],
+      dataId: this.state.dataList[0]["id"],
       approvalStatus: false,
     };
+    this.currentDataProcessor();
     axios.post(api_url, dataToSend, headersUse).then((res) => {
-      this.renderRedirect();
-      this.render();
+      console.log(this.state);
     });
   }
 
@@ -96,16 +116,13 @@ class ReviewBox extends Component {
   };
 
   render() {
-    if (this.state.redirect) {
-      window.location.reload();
-    }
     if (this.state.success) {
       return (
         <div className="review-container">
           <div className="review-partition-1">
             Fields:
             <div className="fields-container">
-              {this.state.fields.map((field, index) => (
+              {this.state.currentFields.map((field, index) => (
                 <div className="field-review">{field}</div>
               ))}
             </div>
@@ -113,8 +130,8 @@ class ReviewBox extends Component {
           <div className="review-partition">
             Data:
             <div className="fields-container">
-              {this.state.data.map((field, index) => (
-                <div className="field-review">{field}</div>
+              {this.state.currentData.map((data, index) => (
+                <div className="field-review">{data}</div>
               ))}
             </div>
           </div>
