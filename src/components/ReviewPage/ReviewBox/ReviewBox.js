@@ -63,10 +63,8 @@ class ReviewBox extends Component {
   }
 
   currentDataProcessor() {
-    console.log(this.tempDList);
     var tempDList = this.state.dataList;
     var valD = tempDList.shift();
-    console.log(this.state.tempDList);
     var tempFList = this.state.fieldList;
     var valF = tempFList.shift();
 
@@ -110,10 +108,6 @@ class ReviewBox extends Component {
       console.log(this.state);
     });
   }
-
-  renderRedirect = () => {
-    this.setState({ redirect: true });
-  };
 
   render() {
     if (this.state.success) {
