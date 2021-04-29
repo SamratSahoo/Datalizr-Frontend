@@ -10,7 +10,8 @@ The ISM program is a program in which students carry-on skills that not only las
 
 ### Project Preface
 
-Datalizr is a data crowdsourcing platform that serves to gather vast amounts of data for data scientsits, machine learning engineers, and statisticans.  
+Datalizr is a data crowdsourcing platform that serves to gather vast amounts of data for data scientsits, machine learning engineers, and statisticans.
+
 The concept of Datalizr can be visualized with the following example: one person gathering 50,000 lines of data versus 50,000 people gathering 1 line of data each--clearly the 2nd apporach, the one that leverages crowdsourcing is more efficient. This repository houses the frontend interface (what the user sees) of the Datalizr web application.
 
 ### Navigating Github
